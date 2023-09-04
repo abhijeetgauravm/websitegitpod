@@ -20,6 +20,7 @@ Available Commands:
   docs                Open Gitpod Documentation in default browser
   env                 Controls workspace environment variables.
   help                Help about any command
+  idp                 Manage identity providers (IDPs) for authentication.
   info                Display workspace info, such as its ID, class, etc.
   init                Create a Gitpod configuration for this project.
   open                Opens a file in Gitpod
@@ -256,6 +257,22 @@ Extends the current workspace timeout from the default, or currently set value t
 
 ```sh
 gp timeout extend
+```
+
+### idp
+
+Manage identity providers (IDPs) for authentication. Identity providers are external services or systems that help authenticate users. Gitpod allows you to configure different identity providers to authenticate users in your workspace.
+
+To see a list of available commands related to identity providers, you can run:
+
+```sh
+gp idp [command]
+```
+
+This will provide you with information on how to add, list, remove, and configure identity providers within Gitpod.
+
+```sh
+gp idp --help
 ```
 
 ## info
